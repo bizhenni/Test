@@ -1,0 +1,16 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss     # 日期格式化
+    time-zone: GMT+8                     # 时区
+im:
+  url: http://scrm-api.shudian.xyz:8501/im/
+# MP 配置
+mybatis-plus:
+  type-enums-package: com.yousails.keji.wecom.enums
+
+#配置动态刷新
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
